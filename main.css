@@ -1,0 +1,69 @@
+:root {
+    --main-bg_color: #f5f9fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.container {
+    position: relative;
+    width: 100;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8F9FF;
+    background: #F8F9FF;
+    background: radial-gradient(ellipse at center, #F8F9FF, #A42527);
+    background-repeat: no-repeat;
+}
+
+.img_box {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img {
+    width: 20%;
+    height: 100%;
+    margin: 0.2vw;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+
+}
+
+#img:hover {
+    filter: grayscale(1);
+}
+
+.model {
+    background: white;
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    transform: scale(0);
+}
+
+#close {
+    position: absolute;
+    z-index: 12;
+    font-size: 2vw;
+    cursor: pointer;
+    right: 0;
+}
+
+#img_model {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+}
